@@ -5,6 +5,8 @@ library(stringr)
 library(tools)
 load("movies.Rdata")
 
+print("Test")
+
 # Define UI for application that plots features of movies -----------
 ui <- fluidPage(
   
