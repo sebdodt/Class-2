@@ -3,8 +3,10 @@ library(ggplot2)
 
 # Define UI for application demoing UI construction -----------------
 ui <- fluidPage(
-  plotOutput("plot", brush = "brush"),
-  tableOutput("detail")
+  fluidRow(
+    column(7, plotOutput("plot", brush = "brush")),
+    column(5, tableOutput("detail"))
+  )
 )
 
 # Define server logic -----------------------------------------------
